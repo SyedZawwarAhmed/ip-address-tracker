@@ -17,13 +17,23 @@
     ></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="ip-information.css">
     <title>Frontend Mentor | IP Address Tracker</title>
   </head>
   <body>
     <header>
-      <h1>IP Address Tracker</h1>
-      <input id="search-input" type="text" placeholder="Search for any IP address or domain" />
-      <button id="search-btn"><img src="images/icon-arrow.svg" alt="" /></button>
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button id="search-btn">
+          <img src="images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
     </header>
     <div class="location-information">
       <div>
@@ -44,12 +54,6 @@
       </div>
     </div>
     <div id="mapid"></div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="app.js"></script>
   </body>
 </html>

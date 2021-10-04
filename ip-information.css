@@ -1,0 +1,31 @@
+.location-information {
+  /* bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: -4rem auto -4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3em;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 1rem;
+  width: min(100%, 70rem);
+}
+
+.location-information > div {
+  padding: 1rem 2rem;
+}
+
+.key {
+  text-transform: uppercase;
+  color: var(--dark-grey);
+  font-weight: 700;
+}
+
+.value {
+  font-weight: 500;
+}
+
+.location-information div:not(:last-child) {
+  border-right: 1px solid var(--dark-grey);
+}
