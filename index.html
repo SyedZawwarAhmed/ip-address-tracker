@@ -38,21 +38,22 @@
     <div class="location-information">
       <div>
         <span class="key">ip address</span>
-        <h1 id="ip-address" class="value"></h1>
+        <h1 data-attr="ip" id="ip-address" class="value"></h1>
       </div>
       <div>
         <span class="key">location</span>
-        <h1 id="location" class="value"></h1>
-      </div>
-      <div>
-        <span class="key">Timezone</span>
-        <h1 id="timezone" class="value"></h1>
+        <h1 data-attr="location" id="location" class="value"></h1>
       </div>
       <div>
         <span class="key">isp</span>
-        <h1 id="isp" class="value">UTC</h1>
+        <h1 data-attr="isp" id="isp" class="value"></h1>
+      </div>
+      <div>
+        <span class="key">Timezone</span>
+        <h1 data-attr="timezone" id="timezone" class="value"></h1>
       </div>
     </div>
+    <p id="error-label" class="error-label">Please! Check the IP address you are looking for.</p>
     <div id="mapid"></div>
     <script src="app.js"></script>
   </body>

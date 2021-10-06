@@ -11,18 +11,34 @@
 
 :root {
   --very-dark-grey: hsl(0, 0%, 17%);
+  --very-dark-grey-hover: hsla(0, 0%, 17%, 0.589);
   --dark-grey: hsl(0, 0%, 59%);
 }
 
 body {
   display: flex;
   flex-flow: column;
-  /* flex-direction: column; */
   height: 100vh;
+  overflow: hidden;
 }
 
 #mapid {
   flex: 1;
   min-height: 200px;
   z-index: 0;
+}
+
+.error-label {
+  color: var(--very-dark-grey);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 65vh);
+  display: none;
+  z-index: 1;
+}
+
+.visible {
+  display: block;
 }
