@@ -14,7 +14,9 @@
 }
 
 .location-information > div {
+  max-width: 20rem;
   padding: 1rem 2rem;
+  word-wrap: break-word;
 }
 
 .key {
