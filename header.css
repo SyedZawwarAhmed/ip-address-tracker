@@ -46,3 +46,14 @@ header {
 #search-btn:hover {
   background-color: var(--dark-grey);
 }
+
+@media screen and (max-width: 1188px) {
+  header {
+    padding-top: 1em;
+  }
+
+  #search-input,
+#search-btn {
+  padding: 0.6em 1em;
+}
+}
