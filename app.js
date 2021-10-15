@@ -34,6 +34,8 @@ async function main() {
   if (searchInput.value === "") {
     jsondata = await getJson(ipApiUrl);
     ipAddress = await jsondata.ip;
+  } else {
+    ipAddress = searchInput.value;
   }
   let ipApiDetailsUrl = `https://geo.ipify.org/api/v1?apiKey=at_2ZWF2jDUUGiXiaNJBMPMtnB6EKs6q&ipAddress=${ipAddress}`;
   console.log(ipAddress);
@@ -43,7 +45,7 @@ async function main() {
   if (locationDetails !== undefined) {
     latitude = locationDetails.location.lat;
     longitude = locationDetails.location.lng;
-    mymap = L.map("mapid").setView([latitude, longitude], 18);
+    mymap = L.map("mapid").setView([latitude, longitude], 15);
 
     L.tileLayer(
       "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",

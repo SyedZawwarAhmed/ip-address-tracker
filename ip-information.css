@@ -17,6 +17,7 @@
   max-width: 20rem;
   padding: 1rem 2rem;
   word-wrap: break-word;
+  display: grid;
 }
 
 .key {
@@ -28,9 +29,38 @@
 .value {
   margin-top: 0.5em;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
 .location-information div:not(:last-child) {
   border-right: 1px solid var(--dark-grey);
+}
+
+@media screen and (max-width: 1188px) {
+  .location-information {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .location-information > div {
+    max-width: 100%;
+    padding: 1em;
+  }
+
+  .location-information div:not(:last-child) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .location-information {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 1em;
+  }
+
+  .location-information > div {
+    place-items: center;
+    text-align: center;
+  }
+
 }
